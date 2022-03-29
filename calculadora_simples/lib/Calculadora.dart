@@ -16,7 +16,7 @@ class CalculadoraState extends State<Calculadora> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          ":: Calculadora - Simples ::",
+          "Calculadora - Simples",
           style: TextStyle(fontSize: 20, color: Colors.yellowAccent),
         ),
       ),
