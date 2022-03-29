@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Calculadora extends StatefulWidget {
@@ -21,7 +19,7 @@ class CalculadoraState extends State<Calculadora> {
         ),
       ),
       body: Container(
-        padding: const EdgeInsets.all(40),
+        padding: const EdgeInsets.all(25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -33,7 +31,9 @@ class CalculadoraState extends State<Calculadora> {
                   fontWeight: FontWeight.bold,
                   color: Colors.blueAccent),
             ),
-
+            const Padding(
+              padding: EdgeInsets.only(top: 20),
+            ),
             // Campo de Texto (input do valor 1)
             TextField(
               keyboardType: TextInputType.number,
@@ -49,7 +49,7 @@ class CalculadoraState extends State<Calculadora> {
             ),
             // Espaçamento depois dos inputs
             const Padding(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 30),
             ),
 
             // Nova linha
@@ -61,7 +61,7 @@ class CalculadoraState extends State<Calculadora> {
                   child: const Text(
                     "+",
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
@@ -73,7 +73,7 @@ class CalculadoraState extends State<Calculadora> {
                   child: const Text(
                     "-",
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
@@ -85,7 +85,7 @@ class CalculadoraState extends State<Calculadora> {
                   child: const Text(
                     "/",
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
@@ -97,7 +97,7 @@ class CalculadoraState extends State<Calculadora> {
                   child: const Text(
                     "*",
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
@@ -109,7 +109,7 @@ class CalculadoraState extends State<Calculadora> {
 
             // Espaçamento depois dos inputs
             const Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: EdgeInsets.only(top: 5),
             ),
 
             // Botão Limpar
