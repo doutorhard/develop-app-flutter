@@ -27,8 +27,8 @@ class CalculadoraState extends State<Calculadora> {
           children: <Widget>[
             // Texto que mostra o resultado do cálculo
             Text(
-              "Resultado: $resultado",
-              style: TextStyle(
+              "Resultado: ${resultado.toStringAsFixed(2)}",
+              style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.blueAccent),
@@ -143,9 +143,9 @@ class CalculadoraState extends State<Calculadora> {
   }
 
   // Atributos
-  var num1;
-  var num2;
-  var resultado = 0.0; // = 0
+  num num1 = 0;
+  num num2 = 0;
+  num resultado = 0.0; // = 0
 
   TextEditingController t1 = TextEditingController(text: "");
   TextEditingController t2 = TextEditingController(text: "");
@@ -153,32 +153,32 @@ class CalculadoraState extends State<Calculadora> {
   // Métodos
   void somar() {
     setState(() {
-      num1 = double.parse(t1.text);
-      num2 = double.parse(t2.text);
+      num1 = num.parse(t1.text);
+      num2 = num.parse(t2.text);
       resultado = num1 + num2;
     });
   }
 
   void subtrair() {
     setState(() {
-      num1 = double.parse(t1.text);
-      num2 = double.parse(t2.text);
+      num1 = num.parse(t1.text);
+      num2 = num.parse(t2.text);
       resultado = num1 - num2;
     });
   }
 
   void dividir() {
     setState(() {
-      num1 = double.parse(t1.text);
-      num2 = double.parse(t2.text);
+      num1 = num.parse(t1.text);
+      num2 = num.parse(t2.text);
       resultado = num1 / num2;
     });
   }
 
   void multiplicar() {
     setState(() {
-      num1 = double.parse(t1.text);
-      num2 = double.parse(t2.text);
+      num1 = num.parse(t1.text);
+      num2 = num.parse(t2.text);
       resultado = num1 * num2;
     });
   }
