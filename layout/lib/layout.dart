@@ -9,7 +9,6 @@ class LayoutState extends State<Layout> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
         // Barra de Título
         appBar: AppBar(
